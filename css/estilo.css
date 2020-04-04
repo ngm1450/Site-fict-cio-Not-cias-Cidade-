@@ -13,13 +13,13 @@ body{
 
 #conteiner{
 
-    width: 700px;
+    width: 720px;
     margin: 0 auto;
    
 }
 
 #topo{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 150px;
     background: url('../imagens/detalhe-topo.png') no-repeat right top;
     padding-top: 25px;
@@ -31,4 +31,59 @@ body{
     height: 66px;
     background: url('../imagens/logo.png') no-repeat;
     text-indent: -3000px;
+}
+
+/*Barra de navegação */
+
+ul{
+
+    margin: 0;
+    padding: 0;
+    list-style:none ;
+}
+
+#topo ul{
+
+    background: #b10333;
+    margin-top: 30px;
+    float: left;
+
+}
+
+#topo ul li{
+
+    float: left;
+}
+
+#topo ul li a{
+
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.2em;
+    line-height: 2.1em;
+    text-decoration:  none;
+    color: #fff;
+    background: url('../imagens/divisor.png') no-repeat left center;
+}
+
+#topo li .primeiro a{
+
+    background: none;
+}
+
+#topo ul a:hover{
+
+    color: #69001d;
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.fotos #navegacao a#fotos
+{
+
+    color: white;
+    background: #de003e;
+    cursor: text;
+
 }
